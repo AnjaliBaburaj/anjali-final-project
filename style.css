@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(247, 243, 245);
+  }
+  
+  
+  
+  .sidebar {
+    height: 100vh;
+    background: linear-gradient(rgba(141, 137, 137, 0.7), rgba(145, 141, 141, 0.9)), url(/profile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bottom-border {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sidebar .active {
+    background-color: #d01ad6;
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px rgb(#111);
+    transition: all .3s ease;
+  }
+  
+  .sidebar .active:hover {
+    background-color: #9b1864;
+    transform: translateY(-5px);
+  }
+  
+  .sidebar-link {
+    transition: all .3s ease;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(151, 57, 123);
+    border-radius: 7px;
+  }
+  
+  
+  .search {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #999;
+    transition: all .4s ease;
+  }
+  
+  .search:focus {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #f37eab;
+  }
+  
+  .search-btn {
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #eee;
+    transform: translateY(-1px);
+  }
+  
+  .icon-notify {
+    position: relative;
+  }
+  
+  .icon-notify-link::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #f37eab;
+  }
+  .top-navbar{
+    background-color: plum;
+  }
+  .card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+
+  }
+  .card-footer{
+    background-color: plum;
+  }
+  .card:hover{
+    transition: none;
+    transform: scale(1.01);
+    box-shadow: 3px 3px 3px 3px rgb(226, 199, 217);
+  }
+  .pro-tool{
+    background-color: plum;
+  }
+  .table-con{
+    background-color: powderblue;
+  }

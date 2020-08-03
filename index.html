@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+    </script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse"
+          data-target="#dashboardNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="dashboardNavbar">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- sidebar -->
+              <div class="col-xl-2 col-lg-3 col-md-4 fixed-top sidebar">
+                <!-- Navbar-brand -->
+                <a href="" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-3 bottom-border">My Skool</a>
+                <!-- Profile Container -->
+                <div class="bottom-border pb-3">
+                  <img src="/profile.jpg" alt="profilPic" width="50" class="rounded-circle mr-3">
+                  <a href="#" class="text-white">vihaan jain</a>
+                </div>
+                <!-- sidebar Nav-items -->
+                <ul class="navbar-nav flex-column mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-white p-3 mb-2 sidebar-link active">
+                      <i class="fas fa-home text-light fa-lg mr-3 "></i>Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-file text-light fa-lg mr-3"></i>Attendance</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-phone text-light fa-lg mr-3"></i>Contact</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-paperclip text-light fa-lg mr-3"></i>Assignments</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-chart-bar text-light fa-lg mr-3"></i>Activities</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-table text-light fa-lg mr-3"></i>Results</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                        class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
+                  
+                </ul>
+              </div>
+              <!-- Main Navbar -->
+              <div class="col-xl-10 col-lg-9 col-md-8 fixed-top py-2 top-navbar ml-auto ">
+                <div class="row align-items-center">
+                  <!-- Title -->
+                  <div class="col-md-5">
+                    <h4 class="text-dark text-uppercase mb-0">Dashboard</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <form>
+                      <div class="input-group">
+                        <input type="text" class="form-control search" placeholder="Search">
+                        <button class="btn btn-white search-btn"> <i class="fas fa-search text-danger"></i></button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="navbar-nav">
+                      <li class="nav-item icon-notify"><a href="#" class="nav-link icon-notify-link"><i
+                            class="fas fa-comments text-muted fa-lg"></i></a></li>
+                      <li class="nav-item icon-notify"><a href="#" class="nav-link icon-notify-link"><i
+                            class="fas fa-bell text-muted fa-lg"></i></a></li>
+                      <li class="nav-item ml-md-auto"><a href="" class="nav-link" data-toggle="modal"
+                          data-target="#logout"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+     <!-- cards -->
+     <section>
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+             <div class="row pt-md-5 mt-md-5">
+               <div class="col-xl-3 col-sm-6 p-2 card-deck">
+                 <div class="card card-common">
+                   <div class="card-body">
+                     <div class="d-flex justify-content-between">
+                       <i class="fas fa-file fa-4x text-warning"></i>
+                       <div class="text-right text-secondary">
+                         <h5>attendance percentage</h5>
+                         <h3>96%</h3>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="card-footer text-dark">
+                     <i class="fas fa-sync"></i>
+                     <span>updated now</span>
+                   </div>
+                 </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 p-2 card-deck">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <i class="fas fa-user fa-4x text-primary"></i>
+                        <div class="text-right text-secondary">
+                          <h5>users</h5>
+                          <h3>60</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-dark">
+                      <i class="fas fa-sync"></i>
+                      <span>updated now</span>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="col-xl-3 col-sm-6 p-2 card-deck">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <i class="fas fa-paperclip fa-4x text-danger"></i>
+                        <div class="text-right text-secondary">
+                          <h5>assignment TO DO</h5>
+                          <h3>3</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-dark">
+                      <i class="fas fa-sync"></i>
+                      <span>updated now</span>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="col-xl-3 col-sm-6 p-2 card-deck">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <i class="fas fa-video fa-4x text-success"></i>
+                        <div class="text-right text-secondary">
+                          <h5>Demo Video</h5>
+                          <p>watch and do activity</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-dark">
+                      <i class="fas fa-sync"></i>
+                      <span>updated now</span>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <!--tables-->
+     <section>
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                <h3 class="text-muted text-center mb-3">activity sheets
+                </h3>
+                <table class="table table-striped bg-light text-center">
+                  <thead>
+                    <tr class="text-muted">
+                      <th>#</th>
+                      <th>subject</th>
+                      <th>topic</th>
+                      <th>posted on</th>
+                      <th>download</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>english</td>
+                      <td>alphabet</td>
+                      <td>10/07/2020</td>
+                      <td><button type="button" class="btn btn-info btn-sm">download</button></td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>maths</td>
+                      <td>Number count</td>
+                      <td>11/07/2020</td>
+                      <td><button type="button" class="btn btn-info btn-sm">download</button></td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>general knowledge</td>
+                      <td>all about myself</td>
+                      <td>25/07/2020</td>
+                      <td><button type="button" class="btn btn-info btn-sm">download</button></td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>english</td>
+                      <td>nouns </td>
+                      <td>26/07/2020</td>
+                      <td><button type="button" class="btn btn-info btn-sm">download</button></td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td>maths</td>
+                      <td>before and after</td>
+                      <td>27/07/2020</td>
+                      <td><button type="button" class="btn btn-info btn-sm">download</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- pagination -->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>«</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>»</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end of pagination -->
+
+              </div>
+              <div class="col-xl-6 col-12 ">
+                <h3 class="text-muted text-center mb-3 ">submission status</h3>
+                <table class="table  table-hover text-center">
+                  <thead>
+                    <tr class="text-muted">
+                      <th>#</th>
+                      <th>subject</th>
+                      <th>topic</th>
+                      <th>posted on</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>english</td>
+                      <td>alphabets</td>
+                      <td>10/07/2020</td>
+                      <td><span class="badge badge-success w-80 py-2">submitted</span></td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>maths</td>
+                      <td>Number</td>
+                      <td>11/07/2020</td>
+                      <td><span class="badge badge-success w-80 py-2">submitted</span></td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>general knowledge</td>
+                      <td>all about myself</td>
+                      <td>25/07/2020</td>
+                      <td><span class="badge badge-success w-80 py-2">submitted</span></td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>english</td>
+                      <td>nouns</td>
+                      <td>26/07/2020</td>
+                      <td><span class="badge badge-danger w-80 py-2">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td>maths</td>
+                      <td>before and after</td>
+                      <td>27/07/2020</td>
+                      <td><span class="badge badge-danger w-80 py-2">pending</span></td>
+                    </tr>
+            
+                  </tbody>
+                </table>
+                 <!-- pagination -->
+                 <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end of pagination -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row mb-4 align-items-center">
+              <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                <div class= "text-dark p-4 rounded pro-tool">
+                  <h4 class="mb-5">knowledge scale</h4>
+                  <h6 class="mb-3">english</h6>
+                  <div class="progress mb-4" style="height: 20px">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 91%">
+                      91%
+                    </div>
+                  </div>
+                  <h6 class="mb-3">mathematics</h6>
+                  <div class="progress mb-4" style="height: 20px">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-primary" style="width: 82%">
+                      82%
+                    </div>
+                  </div>
+                  <h6 class="mb-3">general knowledge</h6>
+                  <div class="progress mb-4" style="height: 20px">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-warning" style="width: 67%">
+                      67%
+                    </div>
+                  </div>
+                  <h6 class="mb-3">language</h6>
+                  <div class="progress mb-4" style="height: 20px">
+                    <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width: 10%">
+                      10%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-12">
+                <h4 class="text-muted p-3 mb-3">friends Activity Feed</h4>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked="">
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      swetha has submitted english assignment
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>edit</h6>"><svg class="svg-inline--fa fa-edit fa-w-18 fa-lg text-success mr-2" aria-hidden="true" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit fa-lg text-success mr-2"></i> --></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>delete</h6>"><svg class="svg-inline--fa fa-trash-alt fa-w-14 fa-lg text-danger" aria-hidden="true" data-prefix="fas" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg><!-- <i class="fas fa-trash-alt fa-lg text-danger"></i> --></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked="">
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      parth shah has submitted general knowledge activity
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>edit</h6>"><svg class="svg-inline--fa fa-edit fa-w-18 fa-lg text-success mr-2" aria-hidden="true" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit fa-lg text-success mr-2"></i> --></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>delete</h6>"><svg class="svg-inline--fa fa-trash-alt fa-w-14 fa-lg text-danger" aria-hidden="true" data-prefix="fas" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg><!-- <i class="fas fa-trash-alt fa-lg text-danger"></i> --></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked="">
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      rakesh has commented on maths assignment 
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>edit</h6>"><svg class="svg-inline--fa fa-edit fa-w-18 fa-lg text-success mr-2" aria-hidden="true" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit fa-lg text-success mr-2"></i> --></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>delete</h6>"><svg class="svg-inline--fa fa-trash-alt fa-w-14 fa-lg text-danger" aria-hidden="true" data-prefix="fas" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg><!-- <i class="fas fa-trash-alt fa-lg text-danger"></i> --></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid bg-white">
+                  <div class="row py-3 mb-4 task-border align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" checked="">
+                    </div>
+                    <div class="col-sm-9 col-8">
+                      vihaan submitted english assignment 
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>edit</h6>"><svg class="svg-inline--fa fa-edit fa-w-18 fa-lg text-success mr-2" aria-hidden="true" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit fa-lg text-success mr-2"></i> --></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#" data-toggle="tooltip" title="" data-html="true" data-placement="top" data-original-title="<h6>delete</h6>"><svg class="svg-inline--fa fa-trash-alt fa-w-14 fa-lg text-danger" aria-hidden="true" data-prefix="fas" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg><!-- <i class="fas fa-trash-alt fa-lg text-danger"></i> --></a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row align-items-center mb-5">
+              <div class="col-xl-7">
+                <h4 class="text-muted mb-4">Ask Your Doubts???</h4>
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                        <img src="/profile.jpg" width="50" class="mr-3 rounded">
+                        John posted a question
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseOne" data-parent="#accordion" style="">
+                      <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true">
+                        <img src="/profile.jpg" width="50" class="mr-3 rounded">
+                        sneha  posted a question
+                      </button>
+                    </div>
+                    <div class="collapse show" id="collapseTwo" data-parent="#accordion" style="">
+                      <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse" data-target="#collapseThree">
+                        <img src="/profile.jpg" width="50" class="mr-3 rounded">
+                          anjali posted a question
+                      </button>
+                    </div>
+                    <div class="collapse" id="collapseThree" data-parent="#accordion">
+                      <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
+                      </div>                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                </div>
+              </div>
+              <div class="col-xl-5 mt-5">
+                <div class="card rounded">
+                  <div class="card-body">
+                    <h5 class="text-muted text-center mb-4">Quick Status Post</h5>
+                    <ul class="list-inline text-center py-3">
+                      <li class="list-inline-item mr-4">
+                        <a href="#">
+                          <svg class="svg-inline--fa fa-pencil-alt fa-w-16 text-success" aria-hidden="true" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt text-success"></i> -->
+                          <span class="h6 text-muted">Status</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item mr-4">
+                        <a href="#">
+                          <svg class="svg-inline--fa fa-camera fa-w-16 text-info" aria-hidden="true" data-prefix="fas" data-icon="camera" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path></svg><!-- <i class="fas fa-camera text-info"></i> -->
+                          <span class="h6 text-muted">Photo</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <svg class="svg-inline--fa fa-map-marker-alt fa-w-12 text-primary" aria-hidden="true" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fas fa-map-marker-alt text-primary"></i> -->
+                          <span class="h6 text-muted">Check-in</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control py-2 mb-3" placeholder="What's Your Status...">
+                        <button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py-2 mb-5">Submit Post</button>
+                      </div>
+                    </form>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <svg class="svg-inline--fa fa-calendar-alt fa-w-14 fa-8x text-warning d-block m-auto py-3" aria-hidden="true" data-prefix="far" data-icon="calendar-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg><!-- <i class="far fa-calendar-alt fa-8x text-warning d-block m-auto py-3"></i> -->
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">Mon, may 26</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <svg class="svg-inline--fa fa-clock fa-w-16 fa-8x text-danger d-block m-auto py-3" aria-hidden="true" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg><!-- <i class="far fa-clock fa-8x text-danger d-block m-auto py-3"></i> -->
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">3:50 am</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+</body>
+</html>
